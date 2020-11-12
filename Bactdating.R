@@ -68,5 +68,27 @@ effectiveSize(mcmc2)
 leafDates(rooted)
 nodeDates(rooted)
 
-# See where is the root
-plot(res,'treeRoot',show.tip.label=F, show.axis = T,cex = .01,)
+#######################
+## To read the stats ##
+#######################
+# how to export to figtree to see data clearly (MRCA) - install treeio first
+if (!requireNamespace("BiocManager", quietly = TRUE))
+    install.packages("BiocManager") 
+BiocManager::install("treeio")
+library("treeio")
+
+## Export data to nexus file (contains time scale)
+l=as.treedata.resBactDating(res)
+obj=methods::new('treedata',phylo=l[[1]],data=dplyr::tbl_df(as.data.frame(l[[2]])))
+write.beast(obj,'res.nex')
+
+# Now import into Figtree (https://github.com/rambaut/figtree/releases) v1.4.4
+# Branch labels > display 'label' -> get to know which node is which
+# Time scale off set -> the latest time in the sample. Use reverse axis to corrrect for the axis orientation.
+
+# Now extract CI for each node:
+## Combining tree tip and node labels from res object:
+combined <- c(res$tree$tip.label,res$tree$node.label)
+## Combining previous object (combined) with CIs:
+combinedCIs <- cbind(combined,res$CI)
+print(combinedCIs)
