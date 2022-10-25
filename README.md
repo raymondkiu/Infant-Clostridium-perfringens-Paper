@@ -1,5 +1,5 @@
 # Infant-associated ***Clostridium perfringens***
-### R scripts (graphing) and sequence databases used in this following publication:
+### R scripts (data visualisation) and sequence databases (virulence genes and plasmids) used in this following publication:
 
 [**Particular genomic and virulence traits are associated with preterm-derived toxigenic ***Clostridium perfringens*** strains**](https://doi.org/10.1101/2021.08.03.454877)
 
