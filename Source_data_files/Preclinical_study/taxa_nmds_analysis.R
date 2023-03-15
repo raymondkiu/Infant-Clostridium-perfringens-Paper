@@ -1,6 +1,6 @@
 # NMDS
 library(vegan)
-data <- read.csv("taxa_data_nmds", header = TRUE, stringsAsFactors = TRUE)
+data <- read.csv("taxa_data_nmds.csv", header = TRUE, stringsAsFactors = TRUE)
 data
 #make community matrix - extract columns with gene information from 4th column (col 1 and 2 are metadata)
 com = data[,6:ncol(data)]
@@ -79,5 +79,5 @@ yy = ggplot(data.scores, aes(x = NMDS1, y = NMDS2)) +
         legend.key=element_blank()) + 
   coord_equal() +
   labs(x = "NMDS1", colour = "Group", y = "NMDS2")+ 
-  scale_colour_manual(values=c("Control"="lightgreen","ABX"="mediumpurple1","PFO+"="Red2","PFO-"="Grey"))
+  scale_colour_manual(values=c("Control"="lightgreen","ABX"="mediumpurple1","pfoA+"="Red2","pfoA-"="Grey"))
 yy
