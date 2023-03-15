@@ -13,22 +13,3 @@ p <-
   scale_fill_manual(values=c("I"="#ba1114","II"="#f79ea4","III"="#ebda26","IV"="#701501","V"="#122cc4","VI"="#00d9ff","VII"="#4b0c71","VIII"="#daaff3"))
 p
 
-## toxin profile heatmap using ggplot2
-setwd("~")
-data <- read.csv("cytotoxicity_assay_toxin_profile")  # change to PFO+ or PFO- to access two different csv data files
-head(data)
-# Melt table first
-plotDat <- reshape::melt(data, id=c("Strain","Group"))
-head(plotDat)
-
-# apply theme
-library('cowplot')
-theme_set(theme_cowplot())
-
-## use geom_tile to build heatmap, better than heatmap2, but cannot apply clustering method:
-#data$Assay <- factor(data$Assay, levels=c("Necrosis","Apoptosis","H2S","Gas","Haemolysis","Sporulation","Aerotolerance","Generation","Bile","AMR"))
-p<-ggplot(data=plotDat) +
-  scale_fill_gradient2(low = "white",high="#e5484d")+
-  geom_tile(aes(x=Strain, y=variable,fill=value,group=Group),color="lightgrey",size=0.5) + theme_void() +
-  theme(axis.text.x = element_text(angle = 45, vjust=1, hjust=1),legend.position = 'left' )
-p
