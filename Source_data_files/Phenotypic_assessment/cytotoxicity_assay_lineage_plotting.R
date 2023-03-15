@@ -1,5 +1,5 @@
 # final boxplot requested by editor:
-data <- read.csv("cytotoxicity_assay_lineage_for_plotting.csv", header = TRUE, stringsAsFactors = TRUE) # reload data
+data <- read.csv("cytotoxicity_assay_lineage_data_for_plotting.csv", header = TRUE, stringsAsFactors = TRUE) # reload data
 head(data)
 data$Lineage <- factor(data$Lineage, levels = c("Untreated", "I","III","V","VI","VII"))
 
