@@ -1,7 +1,7 @@
 library(vegan)
 setwd("~/")
 
-X <- read.csv("taxa_raw_count.csv",row.names=1)
+X <- read.csv("taxa_genus_raw_count.csv",row.names=1)
 head(X)
 row.names(X)
 Y <- t(X)
