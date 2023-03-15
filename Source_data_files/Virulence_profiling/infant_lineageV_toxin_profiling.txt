@@ -1,4 +1,4 @@
-Sample	plc	pfoA	ccp	colA	cpe	etx	iap	ibp	becA	becB	cpb-var1	cpb2-var2	alveolysin
+Sample	plc	pfoA	ccp	colA	cpe	etx	iap	ibp	becA	becB	cpb2-var1	cpb2-var2	alveolysin
 IQ004	1	0	1	1	0	0	0	0	0	0	0	0	0
 IQ007	1	0	1	1	0	0	0	0	0	0	0	0	0
 IQ015	1	0	1	1	0	0	0	0	0	0	0	0	0
