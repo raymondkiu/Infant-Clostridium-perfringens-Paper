@@ -1,0 +1,17 @@
+Lineage,Group,Strain,Strainperc,PFOperc
+I,Yes,3,60,100
+II,Yes,1,100,0
+III,Yes,3,60,100
+IV,Yes,1,100,100
+V,Yes,12,33,8
+VI,Yes,4,33,50
+VII,Yes,5,28,100
+VIII,Yes,1,100,0
+I,No,,40,0
+II,No,,0,100
+III,No,,40,0
+IV,No,,0,0
+V,No,,67,92
+VI,No,,67,50
+VII,No,,72,0
+VIII,No,,0,100
