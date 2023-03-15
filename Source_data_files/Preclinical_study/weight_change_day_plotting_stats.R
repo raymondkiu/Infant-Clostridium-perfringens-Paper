@@ -35,7 +35,7 @@ p + theme(axis.text.x = element_blank(),axis.ticks.x=element_blank()) +facet_gri
 #theme(axis.text.x = element_text(angle = 45, vjust=1, hjust=1))
 
 ## Stats
-Data <- read.csv("weight-change-melted-group.csv", header = TRUE, stringsAsFactors = TRUE)
+Data <- read.csv("weight_change_day_data.csv", header = TRUE, stringsAsFactors = TRUE)
 head(Data)
 shapiro.test(Data$value) # seem to be different from normal distribution
 
