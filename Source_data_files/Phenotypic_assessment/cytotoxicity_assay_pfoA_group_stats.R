@@ -1,5 +1,5 @@
 # to do stats in between lineages:
-data <- read.csv("cytotoxicity_assay_data_for_stats")
+data <- read.csv("cytotoxicity_assay_data_for_stats.csv")
 head(data)
 library(FSA)
 library(rstatix)
