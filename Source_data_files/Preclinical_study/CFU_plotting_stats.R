@@ -9,7 +9,7 @@ library(ggpubr)
 #Day 1	IQ146	PFO+	1
 #Day 1	IQ146	PFO+	1
 
-data <- read.csv("CFU_for_plotting_stats.csv", header = TRUE, stringsAsFactors = TRUE)
+data <- read.csv("CFU_for_plotting.csv", header = TRUE, stringsAsFactors = TRUE)
 head(data)
 
 # Use theme cowplot - minimalist
