@@ -1,4 +1,4 @@
-data <- read.csv("cytotoxicity_assay_lineage_data_for_plotting.csv")
+data <- read.csv("cytotoxicity_assay_lineage_data_for_stats.csv")
 head(data)
 library(FSA)
 library(rstatix)
