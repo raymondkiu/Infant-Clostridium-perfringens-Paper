@@ -1,0 +1,41 @@
+Cage,Bacteria strain,Group,Mouse strain,Mouse age,Mouse gender
+1,Untreated,Control,C57BL/6,5 weeks old,Female
+1,Untreated,Control,C57BL/6,5 weeks old,Female
+1,Untreated,Control,C57BL/6,5 weeks old,Female
+1,Untreated,Control,C57BL/6,5 weeks old,Female
+1,Untreated,Control,C57BL/6,5 weeks old,Female
+2,Antibiotic cocktail only,ABX,C57BL/6,5 weeks old,Female
+2,Antibiotic cocktail only,ABX,C57BL/6,5 weeks old,Female
+2,Antibiotic cocktail only,ABX,C57BL/6,5 weeks old,Female
+2,Antibiotic cocktail only,ABX,C57BL/6,5 weeks old,Female
+2,Antibiotic cocktail only,ABX,C57BL/6,5 weeks old,Female
+3,IQ146,pfoA+,C57BL/6,5 weeks old,Female
+3,IQ146,pfoA+,C57BL/6,5 weeks old,Female
+3,IQ146,pfoA+,C57BL/6,5 weeks old,Female
+3,IQ146,pfoA+,C57BL/6,5 weeks old,Female
+3,IQ146,pfoA+,C57BL/6,5 weeks old,Female
+4,IQ129,pfoA+,C57BL/6,5 weeks old,Female
+4,IQ129,pfoA+,C57BL/6,5 weeks old,Female
+4,IQ129,pfoA+,C57BL/6,5 weeks old,Female
+4,IQ129,pfoA+,C57BL/6,5 weeks old,Female
+4,IQ129,pfoA+,C57BL/6,5 weeks old,Female
+5,LH115,pfoA+,C57BL/6,5 weeks old,Female
+5,LH115,pfoA+,C57BL/6,5 weeks old,Female
+5,LH115,pfoA+,C57BL/6,5 weeks old,Female
+5,LH115,pfoA+,C57BL/6,5 weeks old,Female
+5,LH115,pfoA+,C57BL/6,5 weeks old,Female
+6,IQ147,pfoA-,C57BL/6,5 weeks old,Female
+6,IQ147,pfoA-,C57BL/6,5 weeks old,Female
+6,IQ147,pfoA-,C57BL/6,5 weeks old,Female
+6,IQ147,pfoA-,C57BL/6,5 weeks old,Female
+6,IQ147,pfoA-,C57BL/6,5 weeks old,Female
+7,IQ133,pfoA-,C57BL/6,5 weeks old,Female
+7,IQ133,pfoA-,C57BL/6,5 weeks old,Female
+7,IQ133,pfoA-,C57BL/6,5 weeks old,Female
+7,IQ133,pfoA-,C57BL/6,5 weeks old,Female
+7,IQ133,pfoA-,C57BL/6,5 weeks old,Female
+8,LH043,pfoA-,C57BL/6,5 weeks old,Female
+8,LH043,pfoA-,C57BL/6,5 weeks old,Female
+8,LH043,pfoA-,C57BL/6,5 weeks old,Female
+8,LH043,pfoA-,C57BL/6,5 weeks old,Female
+8,LH043,pfoA-,C57BL/6,5 weeks old,Female
