@@ -4,12 +4,12 @@ library(ggpubr)
 
 # Data format in csv
 # Group	Lineage	Day	Percentage
-# PFO+	Lineage 7	Day 0	100
-# PFO+	Lineage 7	Day 2	9.375000023
-# PFO+	Lineage 7	Day 4	2.100000005
-# PFO+	Lineage 7	Day 6	0.600000002
-# PFO+	Lineage 7	Day 8	0.03375
-# PFO+	Lineage 7	Day 10	0.008625
+# pfoA+	Lineage 7	Day 0	100
+# pfoA+	Lineage 7	Day 2	9.375000023
+# pfoA+	Lineage 7	Day 4	2.100000005
+# pfoA+	Lineage 7	Day 6	0.600000002
+# pfoA+	Lineage 7	Day 8	0.03375
+# pfoA+	Lineage 7	Day 10	0.008625
 
 # Do one line plot grouped in all lineages
 data <- read.csv("oxygen_tolerance_assay_for_plotting.csv", header = TRUE, stringsAsFactors = TRUE)

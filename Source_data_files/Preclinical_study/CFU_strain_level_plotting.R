@@ -1,13 +1,13 @@
-setwd("~/Desktop/pretermCP/Analysis-Rev1/InvivoHistology/")
+setwd("~/")
 library(tidyverse)
 library(ggpubr)
 
 
 #Time	Group	PFO	CFU
-#Day 1	IQ146	PFO+	1
-#Day 1	IQ146	PFO+	20000
-#Day 1	IQ146	PFO+	1
-#Day 1	IQ146	PFO+	1
+#Day 1	IQ146	pfoA+	1
+#Day 1	IQ146	pfoA+	20000
+#Day 1	IQ146	pfoA+	1
+#Day 1	IQ146	pfoA+	1
 
 data <- read.csv("CFU_for_plotting", header = TRUE, stringsAsFactors = TRUE)
 head(data)

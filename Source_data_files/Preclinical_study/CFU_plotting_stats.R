@@ -4,10 +4,10 @@ library(ggpubr)
 
 # Format
 #Time	Group	PFO	CFU
-#Day 1	IQ146	PFO+	1
-#Day 1	IQ146	PFO+	20000
-#Day 1	IQ146	PFO+	1
-#Day 1	IQ146	PFO+	1
+#Day 1	IQ146	pfoA+	1
+#Day 1	IQ146	pfoA+	20000
+#Day 1	IQ146	pfoA+	1
+#Day 1	IQ146	pfoA+	1
 
 data <- read.csv("CFU_for_plotting.csv", header = TRUE, stringsAsFactors = TRUE)
 head(data)
@@ -16,10 +16,10 @@ head(data)
 library('cowplot')
 theme_set(theme_cowplot())
 
-# Do PFO+ and PFO- groups
+# Do pfoA+ and pfoA- groups
 p <- 
   data %>%
-  mutate(PFO = fct_relevel(PFO,"PFO+","PFO-")) %>% ggplot(aes(x=Time, y=CFU, fill=PFO)) + 
+  mutate(PFO = fct_relevel(PFO,"pfoA+","pfoA-")) %>% ggplot(aes(x=Time, y=CFU, fill=PFO)) + 
   geom_boxplot(outlier.colour = "black", outlier.shape = NA, outlier.alpha = NA, notch=FALSE,varwidth = FALSE, size=0.2, width=0.5) +
   scale_y_log10(limits = c(1,1e9),breaks =c(1,10,100,1000,10000,100000,1000000,10000000,100000000,1000000000),
                 label = c("0","1","2","3", "4","5","6","7","8","9")) +
@@ -27,7 +27,7 @@ p <-
 
 p 
 
-p + scale_fill_manual(values=c("PFO+"="Red2","PFO-"="Grey")) + 
+p + scale_fill_manual(values=c("pfoA+"="Red2","pfoA-"="Grey")) + 
   theme(axis.line = element_line(colour = 'black', size = 0.5),axis.text.x = element_text(angle = 45, vjust=1, hjust=1, size=11), axis.text.y= element_text(size=11)) + 
   ylab("")+ xlab("")+
   facet_grid(~PFO, scales="free") 
